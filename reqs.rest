@@ -1,0 +1,36 @@
+GET http://localhost:3000
+
+### test
+GET http://localhost:3000/auth/asd
+
+### 
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "userName":"abhi53",
+    "email":"abhi531@gmail.com",
+    "password":"Create53pass",
+    "role":"admin"  
+}
+
+### 
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email":"abhi531@gmail.com",
+    "password":"Create53pass"
+}
+
+### 
+DELETE http://localhost:3000/auth/logout
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiNjY1YjBlZTEzZWFkMDdhYjY5ZDIzZTE1IiwiaWF0IjoxNzE3MjU0NzQwLCJleHAiOjE3MTcyNTgzNDB9.Iz5UwQNgeMNwj4uKwda-yJim31Naf7Qs6xblAtm0QWY"
+}
+
+###
+POST http://localhost:3000/auth/validateToken
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiNjY1YjBlZTEzZWFkMDdhYjY5ZDIzZTE1IiwiaWF0IjoxNzE3MjU0NzQwLCJleHAiOjE3MTcyNTgzNDB9.Iz5UwQNgeMNwj4uKwda-yJim31Naf7Qs6xblAtm0QWY
