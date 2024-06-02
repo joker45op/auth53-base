@@ -16,7 +16,7 @@ const validateToken = async (req, res, next) => {
 
     const tok = await Token.findOne({ token:token });
     if (!tok) {
-      return next(createError.Unauthorized("Invalid Token2"));
+      return next(createError.Unauthorized("Invalid Token"));
     }
 
     verifyToken(req, res, next);

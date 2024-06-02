@@ -80,7 +80,7 @@ router.delete("/logout", async (req, res, next) => {
 
     const deletedToken = await Token.findOneAndDelete({ token: token });
     if (!deletedToken) {
-      throw createError.BadRequest("Invalid token");
+      throw createError.BadRequest("Invalid token / already logged out");
     }
 
     res.status(200).json({ message: "Logout successful" });
@@ -90,7 +90,12 @@ router.delete("/logout", async (req, res, next) => {
 });
 
 router.post("/validateToken", validateToken, async (req, res, next) => {
-  res.send("validate");
+  try {
+    req.user = req.user.payload
+    res.status(200).json({ message: "Token is valid", userId: req.user });
+  } catch (error) {
+    next(createError.InternalServerError("Internal Server Error"));
+  }
 });
 
 module.exports = router;

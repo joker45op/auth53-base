@@ -20,7 +20,7 @@ Content-Type: application/json
 
 {
     "email":"abhi531@gmail.com",
-    "password":"Pa$$1word"
+    "password":"Create53pass"
 }
 
 ### 
@@ -28,9 +28,9 @@ DELETE http://localhost:3000/auth/logout
 Content-Type: application/json
 
 {
-    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiNjY1YjBlZTEzZWFkMDdhYjY5ZDIzZTE1IiwiaWF0IjoxNzE3MjU0NzQwLCJleHAiOjE3MTcyNTgzNDB9.Iz5UwQNgeMNwj4uKwda-yJim31Naf7Qs6xblAtm0QWY"
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiNjY1YjBlZTEzZWFkMDdhYjY5ZDIzZTE1IiwiaWF0IjoxNzE3MzIxNzUwLCJleHAiOjE3MTczMjUzNTB9.J7ngncu2oBNEeY4Kg6k72-guUIZy8l1qfzhoPs3MHPM"
 }
 
 ###
 POST http://localhost:3000/auth/validateToken
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiNjY1YjBlZTEzZWFkMDdhYjY5ZDIzZTE1IiwiaWF0IjoxNzE3MjU0NzQwLCJleHAiOjE3MTcyNTgzNDB9.Iz5UwQNgeMNwj4uKwda-yJim31Naf7Qs6xblAtm0QWY
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiNjY1YjBlZTEzZWFkMDdhYjY5ZDIzZTE1IiwiaWF0IjoxNzE3MzIxNzUwLCJleHAiOjE3MTczMjUzNTB9.J7ngncu2oBNEeY4Kg6k72-guUIZy8l1qfzhoPs3MHPM
