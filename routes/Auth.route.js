@@ -90,7 +90,6 @@ router.delete("/logout", async (req, res, next) => {
 });
 
 router.post("/validateToken", validateToken, async (req, res, next) => {
-  // console.log(req.user.payload);
   res.send("validate");
 });
 
