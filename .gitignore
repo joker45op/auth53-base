@@ -1,6 +1,7 @@
-# Dependencies
-/node_modules
-
+# Node.js dependencies
+auth53-server/node_modules/
+auth53-client/node_modules/
+node_modules/
 # Build files
 /build
 /dist
