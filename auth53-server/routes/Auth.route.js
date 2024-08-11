@@ -12,10 +12,7 @@ const { signAccessToken } = require("../helpers/jwt_helper");
 const { validateToken } = require("../helpers/validate_token");
 
 router.post("/register", async (req, res, next) => {
-  // register logic
   try {
-    const { userName, email, password, role } = req.body;
-
     const result = await authSchema.validateAsync(req.body);
 
     const doesExist = await User.findOne({ email: result.email });
@@ -46,11 +43,10 @@ router.post("/register", async (req, res, next) => {
 
 router.post("/login", async (req, res, next) => {
   // login logic
-  // email, password in req
   try {
     const result = await authLoginSchema.validateAsync(req.body);
 
-    const user = await User.findOne({ email: result.email });
+      const user = await User.findOne({ email: result.email });
     if (!user) throw createError.NotFound("User not registered");
 
     const isMatch = await user.isValidPassword(result.password);
@@ -83,7 +79,7 @@ router.delete("/logout", async (req, res, next) => {
       throw createError.BadRequest("Invalid token / already logged out");
     }
 
-    res.status(200).json({ message: "Logout successful" });
+    res.status(200).json({ message: "Logout successfull" });
   } catch (error) {
     next(error);
   }
