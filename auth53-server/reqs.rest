@@ -9,7 +9,7 @@ Content-Type: application/json
 
 {
     "userName":"abhi53",
-    "email":"kari53@gmail.com",
+    "email":"kari5443@gmail.com",
     "password":"Create53pass",
     "role":"admin"  
 }
@@ -28,9 +28,9 @@ DELETE http://localhost:3000/auth/logout
 Content-Type: application/json
 
 {
-    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiNjY1ZWI3NmYzYzM1NWIzYjg2NDA5Zjg3IiwiaWF0IjoxNzE3NDgzMzc1LCJleHAiOjE3MTc0ODY5NzV9.xDrBzeMm4b0BKC7_M_VEOeLXi9tbC1AHEB-kWwxDyzE"
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiNjY1YjBlZTEzZWFkMDdhYjY5ZDIzZTE1IiwiaWF0IjoxNzIzNDA2MzQyLCJleHAiOjE3MjM0MDk5NDJ9.4fwuEhx2m2QCj-35-c3pExJjYDTP6bIC1MDFwl3UFP4"
 }
 
 ###
 POST http://localhost:3000/auth/validateToken
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiNjY1ZWI3NmYzYzM1NWIzYjg2NDA5Zjg3IiwiaWF0IjoxNzE3NDgzMzc1LCJleHAiOjE3MTc0ODY5NzV9.xDrBzeMm4b0BKC7_M_VEOeLXi9tbC1AHEB-kWwxDyzE
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiNjY1YjBlZTEzZWFkMDdhYjY5ZDIzZTE1IiwiaWF0IjoxNzIzNDA3NDEyLCJleHAiOjE3MjM0MTEwMTJ9.45kUUVoB0QHsGXedaXQOWildGSrazpuztN1C2GPYutY
