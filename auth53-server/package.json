@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@hapi/joi": "^17.1.1",
-    "auth53-client": "file:../auth53-client",
+    "auth53-client": "^2.2.2",
     "axios": "^1.7.3",
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",

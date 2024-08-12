@@ -1,7 +1,21 @@
 {
   "name": "auth53-client",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "2.2.2",
+  "description": "A client library for authentication using auth53-server.",
+  "main": "src/index.js",
+  "author": "joker45op",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joker45op/auth53-base.git"
+  },
+  "keywords": [
+    "authentication",
+    "auth53",
+    "jwt",
+    "nodejs",
+    "client"
+  ],
   "dependencies": {
     "axios": "^0.21.1"
   }
